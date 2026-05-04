@@ -2,48 +2,81 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>StruckSteel | Estruturas Metálicas</title>
+
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #0f172a;
+    background: #0b1120;
     color: white;
 }
+
 header {
     background: #020617;
     padding: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
-section {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
-}
-h1, h2 {
-    color: #38bdf8;
-}
-.card {
-    background: #1e293b;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 10px;
-}
-footer {
-    background: #020617;
+
+.hero {
+    padding: 80px 20px;
     text-align: center;
-    padding: 20px;
+    background: linear-gradient(135deg, #0ea5e9, #1e293b);
 }
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
 .button {
     display: inline-block;
-    padding: 12px 20px;
+    margin-top: 20px;
+    padding: 14px 25px;
     background: #38bdf8;
     color: black;
     text-decoration: none;
-    border-radius: 6px;
-    margin-top: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
 }
 </style>
 </head>
@@ -51,35 +84,36 @@ footer {
 <body>
 
 <header>
-STRUCKSTEEL | Estruturas Metálicas
+STRUCKSTEEL
 </header>
 
-<section>
-<h1>Projetos de Estruturas Metálicas</h1>
-<p>Projetos seguros, eficientes e econômicos, do conceito até a execução.</p>
-<a class="button" href="https://wa.me/5562998533203">Fale no WhatsApp</a>
-</section>
+<div class="hero">
+<h1>Estruturas Metálicas</h1>
+<p>Projetos, detalhamento e soluções completas em aço</p>
+<a class="button" href="https://wa.me/5562998533203">Solicitar orçamento</a>
+</div>
 
-<section>
+<div class="section">
 <h2>Sobre a Empresa</h2>
 <div class="card">
-A StruckSteel é especializada em projetos estruturais metálicos, oferecendo soluções seguras, eficientes e econômicas, sempre seguindo normas técnicas atualizadas.
+A StruckSteel é especializada em projetos estruturais metálicos, oferecendo soluções seguras, eficientes e econômicas. Atuamos desde o conceito até o suporte na execução, sempre seguindo normas técnicas atualizadas.
 </div>
-</section>
+</div>
 
-<section>
+<div class="section">
 <h2>Serviços</h2>
-<div class="card">
-• Projetos estruturais metálicos<br>
-• Galpões industriais e comerciais<br>
-• Coberturas metálicas<br>
-• Estruturas sob medida<br>
-• Detalhamento técnico completo
+<div class="grid">
+<div class="card">Projetos estruturais metálicos</div>
+<div class="card">Galpões industriais e comerciais</div>
+<div class="card">Coberturas metálicas</div>
+<div class="card">Estruturas sob medida</div>
+<div class="card">Detalhamento técnico completo</div>
 </div>
-</section>
+</div>
 
-<section>
-<h2>Projetos Realizados</h2>
+<div class="section">
+<h2>Projetos</h2>
+<div class="grid">
 <div class="card">
 <b>Galpão Comercial</b><br>
 Área: 381 m²
@@ -87,36 +121,37 @@ A StruckSteel é especializada em projetos estruturais metálicos, oferecendo so
 
 <div class="card">
 <b>Posto Operacional – Bombeiros</b><br>
-Mais de 11 toneladas de estrutura metálica
++11 toneladas de estrutura
 </div>
 
 <div class="card">
 <b>Galpão Industrial</b><br>
 Área: 645 m²
 </div>
-</section>
+</div>
+</div>
 
-<section>
+<div class="section">
 <h2>Diferenciais</h2>
 <div class="card">
-✔ Projetos 100% personalizados<br>
-✔ Atendimento próximo<br>
+✔ Projetos personalizados<br>
+✔ Atendimento direto<br>
 ✔ Foco em eficiência e estética<br>
 ✔ Acompanhamento completo
 </div>
-</section>
+</div>
 
-<section>
+<div class="section">
 <h2>Contato</h2>
 <div class="card">
 📞 (62) 99853-3203<br>
 📧 strucksteelestruturasmetalicas@gmail.com<br>
 📍 Goiânia - GO
 </div>
-</section>
+</div>
 
 <footer>
-© 2026 StruckSteel - Todos os direitos reservados
+© 2026 StruckSteel - Estruturas Metálicas
 </footer>
 
 </body>
