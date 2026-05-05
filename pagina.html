@@ -2,34 +2,166 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Projeto - Marquises</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StruckSteel | Estruturas Metálicas</title>
 
 <style>
 body {
-    font-family: Arial;
+    margin: 0;
+    font-family: Arial, sans-serif;
     background: #0b1120;
     color: white;
-    text-align: center;
 }
 
-img {
-    width: 80%;
+header {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #38bdf8;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #0ea5e9, #1e293b);
+}
+
+.button {
+    display: inline-block;
     margin-top: 20px;
+    padding: 14px 25px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 30px;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Projeto de Marquises</h1>
+<header>
+<img src="logo.jpg" height="50"><br>
+STRUCKSTEEL
 
-<p>Detalhamento completo de estrutura metálica para marquises.</p>
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#servicos">Serviços</a>
+<a href="#portfolio">Portfólio</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
 
+<div class="hero">
+<h1>Estruturas Metálicas</h1>
+<p>Projetos, detalhamento e soluções completas em aço</p>
+<a class="button" href="https://wa.me/5562994754986">Solicitar orçamento</a>
+</div>
+
+<div class="section" id="sobre">
+<h2>Sobre</h2>
+<div class="card">
+A StruckSteel é especializada em projetos estruturais metálicos.
+
+<b>Missão:</b> Projetos eficientes e seguros.<br>
+<b>Visão:</b> Ser referência no setor.<br>
+<b>Valores:</b> Qualidade, compromisso e transparência.
+</div>
+</div>
+
+<div class="section" id="servicos">
+<h2>Serviços</h2>
+<div class="grid">
+
+<div class="card"><b>Industrial</b><br>Galpões e estruturas</div>
+<div class="card"><b>Comercial</b><br>Lojas e coberturas</div>
+<div class="card"><b>Público</b><br>Projetos institucionais</div>
+<div class="card"><b>Sob medida</b><br>Projetos personalizados</div>
+
+</div>
+</div>
+
+<div class="section" id="portfolio">
+<h2>Portfólio</h2>
+
+<a class="button" href="portfolio.pdf" download>Baixar PDF</a>
+
+<div class="grid">
+
+<a href="pagina.html" class="card-link">
+<div class="card">
 <img src="marquises.PNG">
+Marquises
+</div>
+</a>
 
-<br><br>
+<div class="card">
+<img src="galpao.PNG">
+Galpão
+</div>
 
-<a href="index.html">← Voltar</a>
+</div>
+</div>
+
+<div class="section" id="contato">
+<h2>Contato</h2>
+<div class="card">
+📞 (62) 99947-54986<br>
+📧 strucksteelestruturasmetalicas@gmail.com<br><br>
+
+<a class="button" href="https://wa.me/5562994754986">
+Falar no WhatsApp
+</a>
+</div>
+</div>
+
+<footer>
+© 2026 StruckSteel
+</footer>
 
 </body>
 </html>
