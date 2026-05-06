@@ -1,100 +1,118 @@
 body {
     margin: 0;
-    font-family: Arial;
-    background: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    background: #ffffff;
+    color: #222;
 }
 
-/* TOPO */
+/* HEADER */
 .topo {
     position: fixed;
     width: 100%;
-    background: #fff;
-    padding: 15px;
+    background: white;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    align-items: center;
+    border-bottom: 1px solid #eee;
     z-index: 100;
 }
 
 .logo {
-    height: 40px;
+    height: 45px;
 }
 
 nav a {
-    margin: 0 15px;
+    margin-left: 25px;
     text-decoration: none;
-    color: #111;
-    font-weight: bold;
+    color: #222;
+    font-weight: 500;
 }
 
 /* HERO */
 .hero {
-    height: 90vh;
-    background: url('../img/hero.jpg') center/cover;
-    position: relative;
+    height: 100vh;
+    background: url('../img/hero.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
+    padding: 0 80px;
+    color: white;
 }
 
 .hero-content {
-    position: relative;
-    color: white;
-    text-align: center;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 .btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
     background: #0ea5e9;
     color: white;
-    padding: 12px 25px;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 15px;
 }
 
 /* SEÇÕES */
 section {
-    padding: 80px 20px;
-    text-align: center;
+    padding: 100px 80px;
 }
 
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* SERVIÇOS */
 .cards {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: 30px;
 }
 
 .card {
-    width: 300px;
+    flex: 1;
+    overflow: hidden;
 }
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
-/* GALERIA */
+.card h3 {
+    margin-top: 10px;
+}
+
+/* PORTFÓLIO */
 .galeria {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .galeria img {
-    width: 300px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* CONTATO */
+.contato {
+    background: #f7f7f7;
 }
 
 /* FOOTER */
 footer {
     background: #111;
     color: white;
-    padding: 30px;
+    text-align: center;
+    padding: 40px;
 }
