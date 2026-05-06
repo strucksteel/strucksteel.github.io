@@ -67,8 +67,12 @@ section {
 
 /* LOGO */
 .logo {
-    height: 45px;
-    object-fit: contain;
+    height: 50px;
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.05); /* fundo leve */
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
 }
 
 /* MENU */
