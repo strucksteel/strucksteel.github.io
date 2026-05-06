@@ -151,6 +151,10 @@ nav a:hover {
 
 /* SERVIÇOS */
 .servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background: #020617;
 }
 
