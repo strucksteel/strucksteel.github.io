@@ -19,7 +19,7 @@ h1, h2, h3 {
     letter-spacing: -0.5px;
 }
 
-/* EFEITO GRADIENTE NOS TITULOS PRINCIPAIS */
+/* EFEITO GRADIENTE */
 h1 {
     background: linear-gradient(90deg, #3b82f6, #22c55e);
     -webkit-background-clip: text;
@@ -39,30 +39,43 @@ section {
     text-align: center;
 }
 
-/* HEADER */
+/* HEADER (TRANSPARENTE SOBRE HERO) */
 .topo {
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(15, 23, 42, 0.9);
-    backdrop-filter: blur(10px);
-    padding: 15px 40px;
+
+    padding: 20px 40px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    background: transparent;
+    transition: 0.3s ease;
     z-index: 1000;
 }
 
-.logo {
-    height: 45px;
+/* HEADER AO ROLAR (ADICIONAR VIA JS: .scrolled) */
+.topo.scrolled {
+    position: fixed;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+/* LOGO */
+.logo {
+    height: 45px;
+    object-fit: contain;
+}
+
+/* MENU */
 nav a {
     margin-left: 25px;
     text-decoration: none;
-    color: #e5e7eb;
+    color: #ffffff;
     font-weight: 500;
     transition: 0.3s;
 }
@@ -73,11 +86,10 @@ nav a:hover {
 
 /* HERO */
 .hero {
-    height: 65vh;
-    min-height: 450px;
+    height: 100vh;
 
     background: 
-        linear-gradient(to right, rgba(15,23,42,0.9), rgba(15,23,42,0.6)),
+        linear-gradient(to right, rgba(15,23,42,0.85), rgba(15,23,42,0.4)),
         url('../img/hero.jpg') center/cover no-repeat;
 
     display: flex;
@@ -85,7 +97,6 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     padding: 0 20px;
-    margin-top: 70px;
 }
 
 .hero-content {
@@ -94,7 +105,7 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 44px;
+    font-size: 48px;
     line-height: 1.2;
 }
 
@@ -244,7 +255,7 @@ footer {
 @media (max-width: 900px) {
 
     .topo {
-        padding: 10px 20px;
+        padding: 15px 20px;
         flex-direction: column;
     }
 
@@ -252,12 +263,8 @@ footer {
         margin-top: 10px;
     }
 
-    .hero {
-        height: 60vh;
-    }
-
     .hero h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .sobre-container {
