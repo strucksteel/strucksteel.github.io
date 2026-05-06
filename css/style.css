@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #fff;
+}
+
+/* TOPO */
+.topo {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url('../img/hero.jpg') center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    background: #0ea5e9;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* SEÇÕES */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* GALERIA */
+.galeria {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 300px;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    padding: 30px;
+}
